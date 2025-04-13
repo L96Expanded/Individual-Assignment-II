@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the implementation for Assignment II in the "Machine Learning Foundations" course. In this assignment, we predict the hourly bike rental counts (`cnt`) using the UCI Bike Sharing Dataset. The modeling process includes exploratory data analysis (EDA), feature engineering, model training, hyperparameter tuning, and final model evaluation. We build and compare three regression models:
+This repository contains the implementation for Assignment II in the "Machine Learning Foundations" course. We predict the hourly bike rental counts (`cnt`) using the UCI Bike Sharing Dataset. The modeling process includes exploratory data analysis (EDA), feature engineering, model training, hyperparameter tuning, and final model evaluation. We build and compare three regression models:
 - Linear Regression (baseline)
 - Random Forest Regressor
 - Gradient Boosting Regressor (using XGBoost)
@@ -12,12 +12,8 @@ This repository contains the implementation for Assignment II in the "Machine Le
 - **`assignment2_YourName.ipynb`**  
   The main Jupyter Notebook that includes all code, visualizations, and explanations required for the assignment. It covers every step from data loading and preprocessing through to model evaluation.
   
-- **`ML_assignment_2-3.pdf`**  
-  The assignment brief and requirements document.
-  
 - **`hour.csv`**  
   The Bike Sharing Dataset file (use the `hour.csv` file from the UCI Machine Learning Repository).  
-  *Note: If this file is not included in the repository, please download it from [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset).*
   
 - **`README.md`**  
   This file, which provides an overview and instructions for the project.
@@ -87,13 +83,3 @@ pip install numpy pandas matplotlib seaborn scikit-learn xgboost scikit-optimize
    ```
 4. **Run all cells** in sequential order to perform the analysis and see the outputs.
 
-## Additional Notes
-
-- **Consistency in Features:**  
-  The notebook handles the issue of mismatched feature names (e.g., unseen dummy columns like `weathersit_4`) by aligning the columns in the training, validation, and test sets.
-  
-- **Iterative Development:**  
-  The notebook embodies an iterative process where you may revisit EDA and feature engineering based on model performance.
-  
-- **Documentation:**  
-  Detailed markdown cells explain the reasoning behind every transformation, model selection, and evaluation process.
